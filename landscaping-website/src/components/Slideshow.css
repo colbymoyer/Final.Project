@@ -1,0 +1,95 @@
+/* Container for the slideshow */
+.slideshow-container {
+    max-width: 100%; /* Ensures the slideshow takes up the full width of its container */
+    position: relative; /* Positions child elements relative to this container */
+    margin: auto; /* Centers the slideshow horizontally */
+    overflow: hidden; /* Hides overflowed content (like images) */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Slides */
+.slideshow-slide {
+    display: none; /* Initially hides all slides */
+    width: 100%; /* Makes the slides take up the full width of the container */
+    transition: opacity 0.6s ease-in-out; /* Adds a smooth fade effect */
+}
+
+/* Show the active slide */
+.active-slide {
+    display: block; /* Displays the active slide */
+    opacity: 1; /* Full opacity for visible slide */
+}
+
+/* Caption text */
+.caption {
+    color: #fff; /* White text */
+    font-size: 18px; /* Caption font size */
+    padding: 8px 12px; /* Padding around the text */
+    position: absolute; /* Positioned relative to the slide */
+    bottom: 20px; /* Places the caption at the bottom of the slide */
+    width: 100%; /* Caption takes up full width of slide */
+    text-align: center; /* Centers the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black background */
+}
+
+/* Navigation buttons (previous/next) */
+.prev, .next {
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    position: absolute; /* Positioned relative to the container */
+    top: 50%; /* Vertically centers the buttons */
+    width: auto; /* Auto width */
+    padding: 16px; /* Padding inside buttons */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+    font-size: 20px; /* Button font size */
+    transition: 0.6s ease; /* Adds a smooth transition */
+    border-radius: 0 3px 3px 0; /* Rounds the right corners of the previous button */
+    user-select: none; /* Disables text selection */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0; /* Positions the next button on the right */
+    border-radius: 3px 0 0 3px; /* Rounds the left corners of the next button */
+}
+
+/* Hover effects for navigation buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darkens the background on hover */
+}
+
+/* Dots (indicators) */
+.dot-container {
+    text-align: center; /* Centers the dots horizontally */
+    padding: 10px; /* Padding around the dots */
+    background-color: #f1f1f1; /* Light gray background */
+}
+
+.dot {
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    height: 15px; /* Dot height */
+    width: 15px; /* Dot width */
+    margin: 0 5px; /* Spacing between dots */
+    background-color: #bbb; /* Gray color for dots */
+    border-radius: 50%; /* Rounds the dots into circles */
+    display: inline-block; /* Makes dots inline-block elements */
+    transition: background-color 0.6s ease; /* Smooth transition for background color */
+}
+
+/* Active dot (highlighted) */
+.active-dot {
+    background-color: #717171; /* Darker gray for active dot */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    .prev, .next {
+        font-size: 16px; /* Smaller font size for buttons on small screens */
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    .caption {
+        font-size: 14px; /* Smaller font size for captions on small screens */
+    }
+}

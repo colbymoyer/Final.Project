@@ -1,0 +1,40 @@
+.weather-widget {
+    background: #f0f4f7;
+    border: 1px solid #dbe1e8;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.weather-widget h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.weather-widget input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.weather-widget button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.weather-widget button:hover {
+    background-color: #0056b3;
+}
+
+.weather-widget div {
+    margin: 10px 0;
+    color: #555;
+}

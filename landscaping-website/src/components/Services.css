@@ -1,0 +1,29 @@
+/* Services.css */
+.services {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.services h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.services ul li:last-child {
+    border-bottom: none;
+}

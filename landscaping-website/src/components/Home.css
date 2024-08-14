@@ -1,0 +1,47 @@
+/* Home.css */
+.home {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.mission-statement {
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.mission-statement h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.mission-statement p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.slideshow-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.weather-widget {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
